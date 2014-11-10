@@ -8,9 +8,9 @@ Editors:
 
 ----
 
-Narrator (N): Welcome to Fhtagn Corp. We'll be walking you through your job here today. As a community manager, it's your job to find the truly crazy comments among the ones that just look crazy! Ha ha, people are sometimes so strange.
+Narrator (N): Ah, welcome welcome. I see you're new here. We'll be walking you through your new job today. As a community manager, it's your job to find the truly crazy comments among the ones that just look crazy! Ha ha, people are sometimes so strange.
 
-N: Why don't you try. Here's a random sampling of comments from a youtube video. Just go ahead and select the comment by a worshipper of The Dark One.
+N: Why don't you try. Here's a random sampling of comments from a YouToob video. Just go ahead and select the comment by a worshipper of The Dark One.
 
 1) asdfxjck : what the fuck is the seventies, some kind of cheese candie ? ? ? ?
 2) JOHNJONH : oBOMBa IS A TERRORIST!!!!!!1
@@ -41,7 +41,7 @@ N: It looks like you're going to be a natural at this job. Why don't you go ahea
 1) reeferee : SMOKE WEED 410 ERRY DAY
 2) Johansen : You should know that The Narrator is using this tool to recruit members for his cult. You should stop while you still can!
 3) el_diablo : obama is ruining america he makes the taxes IMPEACH OBAMA KICK HIM OUT
-4) cth_l_ : he waits dreaming in his house, under the black waters
+*4) cth_l_ : he waits dreaming in his house, under the black waters
 
 ----
 
@@ -49,8 +49,12 @@ N: Ha ha ha, how did that get in there. Usually we have filters for that kind of
 
 ("report" button appears)
 
-1) oh_ryleh : 
+*1) oh_ryleh : I only believe in really old gods
 2) TurtleSkate69 : I showed this to my dad ... now he's my mom
 3) gorthoki : FIRST YOLO SWAG
 4) Johansen : Stop now! He's only becoming more and more powerful! Walk away!
 
+(If they report the 4th comment)
+N: Ah, this crap still shows up from time to time. Thanks for reporting it.
+(Otherwise)
+N: Hmm, there was more of that crap about our good work here, keeping those pesky Cthulu worshippers out of otherwise fine YouToob comments.
