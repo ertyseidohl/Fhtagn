@@ -117,14 +117,20 @@ That's right! Three words with three letters! They represent the three elder god
 That's right! GhostHog is an anagram of Shoggoth. Be wary of shoggoths - they are among the more dangerous of posters. [also, Old Man Henderson reference]
 3*) OldYeller563 : LOL and then it was all BOOM!!! Like this 4 HOCKY!!!
 Oh, yes. OldYeller is probably a reference to Hastur, The Feaster from Afar, a yellow, shriveled, flying monstrosity with tentacles tipped with razor-sharp talons that can pierce a victim's skull and siphon out the brain
-4*) 
+4*) Johansen : Look, I'm one of this game's programmers. The game was supposed to be a joke - this isn't even in the script.
+Hmm... yes, I can see how you would think that. This Johansen fellow is clearly paranoid. I'm not sure how this even got in there... I certainly don't remember putting it in...
 
 (letters begin switching themselves around)
+N: You're doing good work, finding the cultists. It is imperative that you continue.
 
-1*)
-2*)
-3*)
-4*)
+1*) Johansen : Listen to me, the script keeps changing itself. If you don't believe me, check the actual script - it's in the game folder.
+2*) Johansen : All the other game writers disappeared shortly after we published. As did all the beta testers. Look, you're the only one left.
+3*) Johansen : I'm not sure what happened, but it seems like the game became... self-aware at some point in development. I'm not sure how, exactly.
+4*) Johansen : All I know is this: You're too far in, now. You can't go back, you can't leave; it will find you. It will hunt you down. If you want to live, you have to win.
+(regardless of which is selected)
+
+N: This... Johansen's comments seem to be very... paranoid. Don't worry, I'll deal with him shortly. Oh, by the way, we run into people like that from time to time. Best advice is just to ignore them. Don't let it get to you, you know?
+N: Anyway, I cannot overstate the importance of our work. It is absolutely critical that you continue.
 
 (entire words fade in and out. blood begins to drop from the top of the screen)
 
