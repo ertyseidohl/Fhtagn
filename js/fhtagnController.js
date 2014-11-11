@@ -1,16 +1,10 @@
-app.controller('fhtagnController', ['$scope', '$compile', 'fhtagnScript', function($scope, $compile, fhtagnScript) {
-	$scope.visible = [];
+app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compile, fhtagnScript) {
+	this.visible = [];
 
-	$scope.renderItems = function() {
-		var render = '';
-		for (index in $scope.visible) {
-			var item = $scope.visible[index];
-			if (item.type == "question") {
-				render += '<fhtagn-question></fhtagn-question>';
-			}
-		}
-		return $compile(render);
-	}
+	this.pushNext = function(index) {
+		console.log(index);
+		this.visible.push(fhtagnScript.getNextScriptItem());
+	}.bind(this);
 
-	$scope.visible.push(fhtagnScript.getNextScriptItem());
+	this.pushNext();
 }]);

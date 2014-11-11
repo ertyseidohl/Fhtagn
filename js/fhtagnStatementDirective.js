@@ -1,6 +1,10 @@
 app.directive('fhtagnStatement', function() {
 	return {
-		restrict: 'E',
-		templateUrl: './templates/fhtagn-statement.html'
+		restrict : 'E',
+		scope : {
+			options : "=",
+			next : "&"
+		},
+		templateUrl : './templates/fhtagn-statement.html'
 	};
 });

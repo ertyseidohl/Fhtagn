@@ -3,7 +3,13 @@ app.directive('fhtagnQuestion', function() {
 		restrict : 'E',
 		templateUrl : './templates/fhtagn-question.html',
 		scope : {
-			options : "@"
-		}
+			options : "=",
+			next : "&"
+		},
+		controller : ['$scope', function($scope) {
+			$scope.select = function(chosenQuestionIndex) {
+				$scope.next({index : chosenQuestionIndex});
+			}
+		}]
 	};
 });
