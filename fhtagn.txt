@@ -140,10 +140,12 @@ N: You're doing good work, finding the cultists. It is imperative that you conti
 
 N: This... Johansen's comments seem to be very... paranoid. Don't worry, I'll deal with him shortly. Oh, by the way, we run into people like that from time to time. Best advice is just to ignore them. Don't let it get to you, you know?
 N: Anyway, I cannot overstate the importance of our work. It is absolutely critical that you continue.
-
+N: Speaking of which, we have decided on a form of motivation.
+(After a short time and without user imput the screen suddenly cuts to a close-up of an elephantine, disfigured face with the bold words "it is imperative that you continue" in the center. A collection of various baritone and tenor frequencies plays at full volume. The scene lasts for an awkward and short amount of time (not correlated to the BPM of the music) before changing, jarringly, to the next question)
+[Yes, it's a flat-out jumpscare, but at this point the idea is to make the player paranoid]
 (entire words fade in and out. blood begins to drop from the top of the screen)
 
-1*)
+1*) 
 2*)
 3*)
 4*)
