@@ -5,6 +5,11 @@ app.directive('fhtagnStatement', function() {
 			options : "=",
 			next : "&"
 		},
-		templateUrl : './templates/fhtagn-statement.html'
+		templateUrl : './templates/fhtagn-statement.html',
+		controller : ['$scope', function($scope) {
+			$scope.select = function(chosenQuestionIndex) {
+				$scope.next({index : chosenQuestionIndex});
+			}
+		}]
 	};
 });

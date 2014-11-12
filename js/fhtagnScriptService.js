@@ -35,28 +35,3 @@ app.factory("fhtagnScript", [function() {
 		}
 	};
 }]);
-
-app.service("abc", function() {
-	function abc() {
-
-	}
-	abc.prototype.xyz = function() {}
-	return abc;
-});
-
-app.controller("foo", function (abc) {
-	var something = abc
-})
-
-app.controller("bar", function (abc) {
-	var something = abc
-})
-
-
-
-
-
-
-
-
-

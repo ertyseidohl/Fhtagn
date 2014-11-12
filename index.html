@@ -17,9 +17,8 @@
 				<fhtagn-question options="item" next="fhtagn.pushNext(index)"></fhtagn-question>
 			</div>
 			<div ng-if="item.type == 'statement'">
-				<fhtagn-statement options="item"></fhtagn-statement>
+				<fhtagn-statement options="item" next="fhtagn.pushNext(-1)"></fhtagn-statement>
 			</div>
-			<a ng-click="fhtagn.pushNext()">a b c d e </a>
 		</div>
 	</div>
 </body>
