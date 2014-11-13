@@ -1,7 +1,7 @@
 <div>
-	<ul>
+	<ol>
 		<li ng-repeat="option in options.options">
-			<a ng-click="select($index)">{{$index + 1}}. {{option}}</a>
+			<a ng-click="select($index)">{{option.text}}</a>
 		</li>
-	</ul>
+	</ol>
 </div>
