@@ -2,7 +2,13 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
   this.visible = [];
 
   this.pushNext = function(index) {
-    var item = fhtagnScript.getNextScriptItem()
+    var item = false;
+    if(index === -1 || !index) {
+      item = fhtagnScript.getNextScriptItem();
+    }
+    else {
+      item = fhtagnScript.getQuestionAnswerItem(index);
+    }
     if (item) {
       this.visible.push(item);
     }
