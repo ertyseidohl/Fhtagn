@@ -8,7 +8,7 @@ app.directive('fhtagnQuestion', function() {
     },
     controller : ['$scope', function($scope) {
       $scope.select = function(chosenQuestionIndex) {
-        $scope.next({index : chosenQuestionIndex});
+        $scope.next({index: $scope["options"]["options"][chosenQuestionIndex]});
       }
     }]
   };
