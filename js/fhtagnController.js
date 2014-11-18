@@ -1,7 +1,7 @@
 app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compile, fhtagnScript) {
   this.visible = [];
 
-  this.pushNext = function(index) {
+  this.renderNext = function(index) {
     var item = false;
     if(!index) {
       item = fhtagnScript.getNextScriptItem();
@@ -14,5 +14,5 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
     }
   }.bind(this);
 
-  this.pushNext();
+  this.renderNext();
 }]);
