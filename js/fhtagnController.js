@@ -1,18 +1,18 @@
 app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compile, fhtagnScript) {
   this.visible = [];
 
-  this.pushNext = function(index) {
+  this.renderNext = function(index) {
     var item = false;
-    if(index === -1 || !index) {
+    if(typeof(index) === "undefined") {
       item = fhtagnScript.getNextScriptItem();
     }
     else {
       item = fhtagnScript.getQuestionAnswerItem(index);
     }
     if (item) {
-      this.visible.push(item);
+      this.visible = [item];
     }
   }.bind(this);
 
-  this.pushNext();
+  this.renderNext();
 }]);

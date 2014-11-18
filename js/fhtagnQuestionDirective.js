@@ -3,12 +3,12 @@ app.directive('fhtagnQuestion', function() {
     restrict : 'E',
     templateUrl : './templates/fhtagn-question.html',
     scope : {
-      options : "=",
-      next : "&"
+      itemData : "=",
+      renderNext : "&"
     },
     controller : ['$scope', function($scope) {
       $scope.select = function(chosenQuestionIndex) {
-        $scope.next({index: $scope["options"]["options"][chosenQuestionIndex]});
+        $scope.renderNext({index: $scope.itemData.options[chosenQuestionIndex]});
       }
     }]
   };
