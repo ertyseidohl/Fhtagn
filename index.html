@@ -17,10 +17,10 @@
   <div id="content" ng-controller="fhtagnController as fhtagn">
     <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
       <div class="fhtagn-question" ng-if="item.type == 'question'">
-        <fhtagn-question options="item" next="fhtagn.renderNext(index)"></fhtagn-question>
+        <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
       </div>
       <div class="fhtagn-statement" ng-if="item.type == 'statement'">
-        <fhtagn-statement options="item" next="fhtagn.renderNext()"></fhtagn-statement>
+        <fhtagn-statement item-data="item" render-next="fhtagn.renderNext()"></fhtagn-statement>
       </div>
     </div>
   </div>

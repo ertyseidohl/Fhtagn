@@ -3,7 +3,7 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
 
   this.renderNext = function(index) {
     var item = false;
-    if(!index) {
+    if(typeof(index) === "undefined") {
       item = fhtagnScript.getNextScriptItem();
     }
     else {

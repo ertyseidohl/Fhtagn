@@ -2,13 +2,14 @@ app.directive('fhtagnStatement', function() {
   return {
     restrict : 'E',
     scope : {
-      options : "=",
-      next : "&"
+      itemData : "=",
+      renderNext : "&"
     },
     templateUrl : './templates/fhtagn-statement.html',
     controller : ['$scope', function($scope) {
+      console.log($scope);
       $scope.select = function() {
-        $scope.next({index : false});
+        $scope.renderNext({});
       }
     }]
   };
