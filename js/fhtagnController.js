@@ -3,7 +3,7 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
 
   this.pushNext = function(index) {
     var item = false;
-    if(index === -1 || !index) {
+    if(!index) {
       item = fhtagnScript.getNextScriptItem();
     }
     else {
