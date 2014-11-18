@@ -60,13 +60,13 @@ exports.SCRIPT = {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
     text : "Very good! I'm quite impressed. Nearly 80% of candidates for this position fail that question. It's a little more difficult sometimes when the Acolyte of the Unholy Terror speaks in code. Try again:",
-    next : false //TODO
+    next : "intro_1"
   },
   question_1_wrong : {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
     text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
-    next : false //TODO
+    next : "question_1"
   }
 };
 
