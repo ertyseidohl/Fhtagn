@@ -7,8 +7,8 @@ app.directive('fhtagnStatement', function() {
     },
     templateUrl : './templates/fhtagn-statement.html',
     controller : ['$scope', function($scope) {
-      $scope.select = function(chosenQuestionIndex) {
-        $scope.next({index : chosenQuestionIndex});
+      $scope.select = function() {
+        $scope.next({index : false});
       }
     }]
   };
