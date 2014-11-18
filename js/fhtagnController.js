@@ -10,7 +10,7 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
       item = fhtagnScript.getQuestionAnswerItem(index);
     }
     if (item) {
-      this.visible.push(item);
+      this.visible = [item];
     }
   }.bind(this);
 
