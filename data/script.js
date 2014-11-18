@@ -4,6 +4,7 @@
 var C = {
   STATEMENT : "statement",
   QUESTION : "question",
+  RESPONSE : "response",
   NARRATOR : "Narrator",
 }
 
@@ -57,13 +58,13 @@ exports.SCRIPT = {
     ]
   },
   question_1_right : {
-    type : C.STATEMENT,
+    type : C.RESPONSE,
     speaker : C.NARRATOR,
     text : "Very good! I'm quite impressed. Nearly 80% of candidates for this position fail that question. It's a little more difficult sometimes when the Acolyte of the Unholy Terror speaks in code. Try again:",
     next : "intro_1"
   },
   question_1_wrong : {
-    type : C.STATEMENT,
+    type : C.RESPONSE,
     speaker : C.NARRATOR,
     text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
     next : "question_1"
