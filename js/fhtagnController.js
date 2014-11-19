@@ -7,7 +7,7 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
       item = fhtagnScript.getNextScriptItem();
     }
     else {
-      item = fhtagnScript.getQuestionAnswerItem(index);
+      item = fhtagnScript.getResponseItem(index);
     }
     if (item) {
       this.visible = [item];
