@@ -25,7 +25,7 @@ app.factory("fhtagnScript", [function() {
 
       if (gameState) {
         this.gameState = gameState;
-        return responseItem;
+        return [responseItem, 5];
       }
       return false;
     },
