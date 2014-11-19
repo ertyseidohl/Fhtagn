@@ -13,7 +13,12 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
       this.health = this.health + response[1];
     }
     if (item) {
-      this.visible = [item];
+      if (this.health <= 0) {
+        this.visible = [window.SCRIPT['loss']]
+      }
+      else {
+        this.visible = [item];
+      }
     }
   }.bind(this);
 
