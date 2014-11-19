@@ -19,11 +19,8 @@ app.factory("fhtagnScript", [function() {
       var responseItem = this.script[chosenAnswer.next];
       var gameState = chosenAnswer["next"];
 
-      if (chosenAnswer.correct) {
-        this.questionState = false;
-      }
-      else {
-        this.updateQuestionState(parentQuestionWithChosen, chosenNumber);
+      if (!chosenAnswer.correct) {
+        parentQuestionWithChosen.options[chosenNumber].selected = true;
       }
 
       if (gameState) {
@@ -31,6 +28,6 @@ app.factory("fhtagnScript", [function() {
         return responseItem;
       }
       return false;
-    }
+    },
   };
 }]);
