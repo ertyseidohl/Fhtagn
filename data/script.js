@@ -44,7 +44,7 @@ exports.SCRIPT = {
         correct : false
       },
       {
-        user : "asianchkkkk",
+        user : "mystreechkkkk",
         text : "You have a secret crush! Paste this message into 8 other comment sections to learn who loves you!",
         next : "question_1_wrong",
         correct : false
