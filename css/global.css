@@ -26,6 +26,15 @@ a:hover {
 
 }
 
+.fhtagn-response {
+  padding: 1em;
+  border-bottom: 1px solid gray;
+}
+
+.fhtagn-response__speaker {
+
+}
+
 .fhtagn-question {
   padding: 1em;
   border-bottom: 1px solid gray;

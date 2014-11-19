@@ -1,11 +1,11 @@
-app.directive('fhtagnStatement', function() {
+app.directive('fhtagnResponse', function() {
   return {
     restrict : 'E',
     scope : {
       itemData : "=",
       renderNext : "&"
     },
-    templateUrl : './templates/fhtagn-statement.html',
+    templateUrl : './templates/fhtagn-response.html',
     controller : ['$scope', function($scope) {
       $scope.select = function() {
         $scope.renderNext({});

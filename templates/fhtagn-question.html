@@ -1,7 +1,12 @@
 <div>
   <ol>
     <li ng-repeat="option in itemData.options">
-      <a ng-click="select($index)">{{option.text}}</a>
+      <div ng-if="option.selected">
+        {{option.text}}
+      </div>
+      <div ng-if="!option.selected">
+        <a ng-click="select($index)">{{option.text}}</a>
+      </div>
     </li>
   </ol>
 </div>
