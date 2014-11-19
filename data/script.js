@@ -109,7 +109,7 @@ exports.SCRIPT = {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
     text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
-    next : "question_1",
+    next : "question_2",
     animate: "test-animate"
   }
 };
