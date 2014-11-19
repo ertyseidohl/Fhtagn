@@ -60,14 +60,57 @@ exports.SCRIPT = {
   question_1_right : {
     type : C.RESPONSE,
     speaker : C.NARRATOR,
-    text : "Very good! I'm quite impressed. Nearly 80% of candidates for this position fail that question. It's a little more difficult sometimes when the Acolyte of the Unholy Terror speaks in code. Try again:",
-    next : "intro_1"
+    text : "Very good! I'm quite impressed. Nearly 80% of candidates for this position fail that question. It's a little more difficult sometimes when the Acolyte of the Unholy Terror speaks in code. Try another:",
+    next : "question_2"
   },
   question_1_wrong : {
     type : C.RESPONSE,
     speaker : C.NARRATOR,
     text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
     next : "question_1"
+  },
+  question_2 : {
+    type : C.QUESTION,
+    speaker : C.NARRATOR,
+    options : [
+      {
+        user : "nontheistis",
+        text : "why isnt the sun the most dangerous place on earth",
+        next : "question_2_wrong",
+        correct : false
+      },
+      {
+        user : "TheDarkOneComes",
+        text : "Can This Help U Life Happy Underwater?",
+        next : "question_2_right",
+        correct : true
+      },
+      {
+        user : "McGeeGeeGee",
+        text : "this music makes me want to kick my cat",
+        next : "question_2_wrong",
+        correct : false
+      },
+      {
+        user : "gollumcorner",
+        text : "Hahahaha holy shit this is SO funny. She said they were moving too fast and they were literally moving fast!!! and then he said he wished he saw the signs and then he got HIT BY SIGNS lol. And the they DIED!!!",
+        next : "question_2_wrong",
+        correct : false
+      }
+    ]
+  },
+  question_2_right : {
+    type : C.STATEMENT,
+    speaker : C.NARRATOR,
+    text : "Excellent! You could probably tell by the username, or the fact that the comment was an initialism for 'Cthulu'. It looks like you're going to be a natural at this job. Why don't you go ahead and get started on the queue. I'll be here to check in on your progress.",
+    next : "intro_1"
+  },
+  question_2_wrong : {
+    type : C.STATEMENT,
+    speaker : C.NARRATOR,
+    text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
+    next : "question_1",
+    animate: "test-animate"
   }
 };
 
