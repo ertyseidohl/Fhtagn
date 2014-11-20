@@ -1,7 +1,7 @@
 {
   "version": 3,
   "file": "style.css",
-  "sources": ["..\/..\/sass\/style.scss","..\/..\/sass\/partials\/global.scss"],
+  "sources": ["..\/..\/sass\/style.scss","..\/..\/sass\/partials\/_variables.scss","..\/..\/sass\/partials\/_global.scss"],
   "names": [],
-  "mappings": ";;ACCA,MAAM;EACJ,QAAQ;EACR,SAAS;;;AAGX;EACE,QAAQ;EACR,QAAQ;EACR,aAAa;EACb,OAAO;;;AAGT,CAAC;EACC,iBAAiB;;;;AAKnB;EACE,SAAS;EACT,eAAe;;;AAOjB;EACE,SAAS;EACT,eAAe;;;AAOjB;EACE,SAAS;EACT,eAAe;;;;AAIjB,YAAY;EACV,SAAS;EACT,YAAW;;;AAGb,YAAY;EACV,SAAS"
+  "mappings": ";;AECA,MAAM;EACJ,QAAQ;EACR,SAAS;EACT,ODFM;ECGN,kBDDY;;;ACId;EACE,kBAAkB;EAClB,OAAO;EACP,QAAQ;EACR,SAAS;;;AAGX;EACE,QAAQ;EACR,QAAQ;EACR,aAAa;EACb,ODnBK;;;ACsBP,CAAC;EACC,iBAAiB;;;;AAKnB;EACE,SAAS;;;AAOX;EACE,SAAS;;;AAOX;EACE,SAAS;;;AAGX;EACE,OD9Ca"
 }

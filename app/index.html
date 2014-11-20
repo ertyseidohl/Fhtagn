@@ -18,16 +18,18 @@
 </head>
 <body ng-app="FhtagnApp">
   <div id="content" ng-controller="fhtagnController as fhtagn">
-    <h1>Current Signal: {{ fhtagn.health }}</h1>
-    <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
-      <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question'">
-        <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
-      </div>
-      <div class="fhtagn-statement {{ item.animate }}" ng-if="item.type == 'statement'">
-        <fhtagn-statement item-data="item" render-next="fhtagn.renderNext()"></fhtagn-statement>
-      </div>
-      <div class="fhtagn-response {{ item.animate }}" ng-if="item.type == 'response'">
-        <fhtagn-response item-data="item" render-next="fhtagn.renderNext()"></fhtagn-response>
+    <div id="body">
+      <h1 id="fhtagn-signal">Current Signal: {{ fhtagn.health }}</h1>
+      <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
+        <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question'">
+          <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
+        </div>
+        <div class="fhtagn-statement {{ item.animate }}" ng-if="item.type == 'statement'">
+          <fhtagn-statement item-data="item" render-next="fhtagn.renderNext()"></fhtagn-statement>
+        </div>
+        <div class="fhtagn-response {{ item.animate }}" ng-if="item.type == 'response'">
+          <fhtagn-response item-data="item" render-next="fhtagn.renderNext()"></fhtagn-response>
+        </div>
       </div>
     </div>
   </div>

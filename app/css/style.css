@@ -2,43 +2,43 @@
 /* line 2, /Users/cea/dev/Fhtagn/sass/partials/global */
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #1C2B1B;
+  background-color: #8EB12A; }
 
-/* line 7, /Users/cea/dev/Fhtagn/sass/partials/global */
+/* line 9, /Users/cea/dev/Fhtagn/sass/partials/global */
+#body {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em; }
+
+/* line 16, /Users/cea/dev/Fhtagn/sass/partials/global */
 a {
   cursor: pointer;
   margin: 0 5px;
   font-weight: bold;
-  color: red; }
+  color: #A34043; }
 
-/* line 14, /Users/cea/dev/Fhtagn/sass/partials/global */
+/* line 23, /Users/cea/dev/Fhtagn/sass/partials/global */
 a:hover {
   text-decoration: underline; }
 
 /* Elements */
-/* line 20, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-statement {
-  padding: 1em;
-  border-bottom: 1px solid gray; }
-
 /* line 29, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-statement {
+  padding: 1em; }
+
+/* line 37, /Users/cea/dev/Fhtagn/sass/partials/global */
 .fhtagn-response {
-  padding: 1em;
-  border-bottom: 1px solid gray; }
+  padding: 1em; }
 
-/* line 38, /Users/cea/dev/Fhtagn/sass/partials/global */
+/* line 45, /Users/cea/dev/Fhtagn/sass/partials/global */
 .fhtagn-question {
-  padding: 1em;
-  border-bottom: 1px solid gray; }
-
-/* Animations */
-/* line 44, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-item.ng-enter {
-  opacity: 0;
-  transition: all linear 0.5s; }
+  padding: 1em; }
 
 /* line 49, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-item.ng-enter-active {
-  opacity: 1; }
+#fhtagn-signal {
+  color: #338855; }
 
 /*# sourceMappingURL=style.css.map */
