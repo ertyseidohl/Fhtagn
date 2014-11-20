@@ -9,8 +9,8 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
     }
     else {
       response = fhtagnScript.getResponseItem(index);
-      item = response[0];
-      this.health = this.health + response[1];
+      item = response;
+      this.health = this.health + item.healthModifier;
     }
     if (item) {
       if (this.health <= 0) {

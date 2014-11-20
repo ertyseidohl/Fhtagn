@@ -17,17 +17,17 @@ app.factory("fhtagnScript", [function() {
       var chosenNumber = parentQuestionWithChosen.chosen;
       var chosenAnswer = parentQuestionWithChosen.options[chosenNumber];
       var responseItem = this.script[chosenAnswer.next];
-      var healthModifier = 0.5;
+      responseItem.healthModifier = 0.25;
       var gameState = chosenAnswer["next"];
 
       if (!chosenAnswer.correct) {
         parentQuestionWithChosen.options[chosenNumber].selected = true;
-        healthModifier = -1;
+        responseItem.healthModifier = -1;
       }
 
       if (gameState) {
         this.gameState = gameState;
-        return [responseItem, healthModifier];
+        return responseItem;
       }
       return false;
     },
