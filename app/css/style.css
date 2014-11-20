@@ -1,0 +1,44 @@
+/* Main styles */
+/* line 2, /Users/cea/dev/Fhtagn/sass/partials/global */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+/* line 7, /Users/cea/dev/Fhtagn/sass/partials/global */
+a {
+  cursor: pointer;
+  margin: 0 5px;
+  font-weight: bold;
+  color: red; }
+
+/* line 14, /Users/cea/dev/Fhtagn/sass/partials/global */
+a:hover {
+  text-decoration: underline; }
+
+/* Elements */
+/* line 20, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-statement {
+  padding: 1em;
+  border-bottom: 1px solid gray; }
+
+/* line 29, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-response {
+  padding: 1em;
+  border-bottom: 1px solid gray; }
+
+/* line 38, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-question {
+  padding: 1em;
+  border-bottom: 1px solid gray; }
+
+/* Animations */
+/* line 44, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-item.ng-enter {
+  opacity: 0;
+  transition: all linear 0.5s; }
+
+/* line 49, /Users/cea/dev/Fhtagn/sass/partials/global */
+.fhtagn-item.ng-enter-active {
+  opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

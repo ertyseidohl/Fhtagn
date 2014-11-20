@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "style.css",
+  "sources": ["..\/..\/sass\/style.scss","..\/..\/sass\/partials\/global.scss"],
+  "names": [],
+  "mappings": ";;ACCA,MAAM;EACJ,QAAQ;EACR,SAAS;;;AAGX;EACE,QAAQ;EACR,QAAQ;EACR,aAAa;EACb,OAAO;;;AAGT,CAAC;EACC,iBAAiB;;;;AAKnB;EACE,SAAS;EACT,eAAe;;;AAOjB;EACE,SAAS;EACT,eAAe;;;AAOjB;EACE,SAAS;EACT,eAAe;;;;AAIjB,YAAY;EACV,SAAS;EACT,YAAW;;;AAGb,YAAY;EACV,SAAS"
+}
