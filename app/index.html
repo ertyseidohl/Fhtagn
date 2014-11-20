@@ -18,7 +18,7 @@
 </head>
 <body ng-app="FhtagnApp">
   <div id="content" ng-controller="fhtagnController as fhtagn">
-    <div id="body">
+    <div class="content-area">
       <h1 id="fhtagn-signal">Current Signal: {{ fhtagn.health }}</h1>
       <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
         <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question'">
