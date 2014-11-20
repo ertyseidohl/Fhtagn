@@ -2,4 +2,4 @@ log/
 tmp/
 .DS_STORE
 logfile
-node_modules/
+node_modules/*
