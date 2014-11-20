@@ -15,6 +15,12 @@ exports.SCRIPT = {
     //exists just to kick off the game
     next : "intro_1"
   },
+  loss : {
+      type : C.STATEMENT,
+      speaker : C.NARRATOR,
+      text: "YOU LOSE.",
+      next: "intro_1"
+  },
   intro_1 : {
     type : C.STATEMENT,
     speaker : C.NARRATOR,

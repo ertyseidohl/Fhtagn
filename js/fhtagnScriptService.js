@@ -17,10 +17,12 @@ app.factory("fhtagnScript", [function() {
       var chosenNumber = parentQuestionWithChosen.chosen;
       var chosenAnswer = parentQuestionWithChosen.options[chosenNumber];
       var responseItem = this.script[chosenAnswer.next];
+      responseItem.healthModifier = 0.25;
       var gameState = chosenAnswer["next"];
 
       if (!chosenAnswer.correct) {
         parentQuestionWithChosen.options[chosenNumber].selected = true;
+        responseItem.healthModifier = -1;
       }
 
       if (gameState) {

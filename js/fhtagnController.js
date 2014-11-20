@@ -1,5 +1,6 @@
 app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compile, fhtagnScript) {
   this.visible = [];
+  this.health = 5.0;
 
   this.renderNext = function(index) {
     var item = false;
@@ -7,10 +8,17 @@ app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compil
       item = fhtagnScript.getNextScriptItem();
     }
     else {
-      item = fhtagnScript.getResponseItem(index);
+      response = fhtagnScript.getResponseItem(index);
+      item = response;
+      this.health = this.health + item.healthModifier;
     }
     if (item) {
-      this.visible = [item];
+      if (this.health <= 0) {
+        this.visible = [window.SCRIPT['loss']]
+      }
+      else {
+        this.visible = [item];
+      }
     }
   }.bind(this);
 
