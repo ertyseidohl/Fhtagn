@@ -2,13 +2,22 @@
 html, body {
   margin: 0;
   padding: 0;
+  color: $black;
+  background-color: $light-green;
+}
+
+.content-area {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 a {
   cursor: pointer;
   margin: 0 5px;
   font-weight: bold;
-  color: red;
+  color: $red;
 }
 
 a:hover {
@@ -19,7 +28,6 @@ a:hover {
 
 .fhtagn-statement {
   padding: 1em;
-  border-bottom: 1px solid gray;
 }
 
 .fhtagn-statement__speaker {
@@ -28,7 +36,6 @@ a:hover {
 
 .fhtagn-response {
   padding: 1em;
-  border-bottom: 1px solid gray;
 }
 
 .fhtagn-response__speaker {
@@ -37,15 +44,8 @@ a:hover {
 
 .fhtagn-question {
   padding: 1em;
-  border-bottom: 1px solid gray;
 }
 
-/* Animations */
-.fhtagn-item.ng-enter {
-  opacity: 0;
-  transition:all linear 0.5s;
-}
-
-.fhtagn-item.ng-enter-active {
-  opacity: 1;
+.fhtagn-signal {
+  color: $cthulu-green;
 }
