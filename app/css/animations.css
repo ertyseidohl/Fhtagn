@@ -31,3 +31,11 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.fhtagn-item.ng-enter {
+  opacity: 0;
+  transition:all linear 0.5s;
+}
+
+.fhtagn-item.ng-enter-active {
+  opacity: 1;
+}
