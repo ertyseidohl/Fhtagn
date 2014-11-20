@@ -38,7 +38,85 @@ a:hover {
   padding: 1em; }
 
 /* line 49, /Users/cea/dev/Fhtagn/sass/partials/global */
-#fhtagn-signal {
+.fhtagn-signal {
   color: #338855; }
+
+/* line 1, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+#circle {
+  width: 320px; }
+
+/* line 4, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.circle {
+  padding: 8px;
+  border: 8px solid transparent;
+  border-radius: 400px; }
+
+/* line 9, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.six {
+  border-top: 8px solid #00b7f2; }
+
+/* line 12, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.seven {
+  border-top: 8px solid #00b7f2; }
+
+/* line 15, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.eight {
+  border-top: 8px solid #00b7f2; }
+
+/* line 18, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.nine {
+  border-top: 8px solid #00b7f2; }
+
+/* line 21, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.ten {
+  border-top: 8px solid #00b7f2; }
+
+/*Strong signal*/
+/* line 25, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-strong .iconic-signal-base {
+  fill: #569e26; }
+
+/* line 28, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-strong .iconic-signal-wave * {
+  stroke: #569e26; }
+
+/*Medium signal*/
+/* line 33, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-medium .iconic-signal-base {
+  fill: #efc411; }
+
+/* line 36, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-medium .iconic-signal-wave * {
+  stroke: #efc411; }
+
+/* line 39, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-medium .iconic-signal-wave-outer {
+  opacity: 0.3;
+  stroke-width: 0.5; }
+
+/*Weak signal*/
+/* line 45, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-weak .iconic-signal-base {
+  fill: #b52808; }
+
+/* line 48, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-weak .iconic-signal-wave * {
+  stroke: #b52808; }
+
+/* line 52, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-weak .iconic-signal-wave-outer, .iconic-signal.iconic-signal-weak .iconic-signal-wave-middle {
+  opacity: 0.3;
+  stroke-width: 0.5; }
+
+/*No signal*/
+/* line 58, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-none .iconic-signal-base {
+  fill: #848484; }
+
+/* line 61, /Users/cea/dev/Fhtagn/sass/partials/wifi */
+.iconic-signal.iconic-signal-none .iconic-signal-wave * {
+  stroke: #848484;
+  opacity: 0.3;
+  stroke-width: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
