@@ -12,8 +12,11 @@
 </div>
 
 <div ng-if="itemData.type == 'text-question'">
-  <ol>
     {{ itemData.text }}
-    i'm a text question.
-  </ol>
+    <form novalidate class="simple-form">
+      <input type="text" ng-model="answer" /><br />
+      <button ng-click="reset()">RESET</button>
+      <button ng-click="select({'answer': answer})">SAVE</button>
+    </form>
+     You say:   {{ answer }}
 </div>
