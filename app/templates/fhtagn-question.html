@@ -1,12 +1,19 @@
-<div>
+<div ng-if="itemData.type == 'multiple-question'">
   <ol>
     <li ng-repeat="option in itemData.options">
       <div ng-if="option.selected">
-        {{option.text}}
+       {{option.user}} :  {{option.text}}
       </div>
       <div ng-if="!option.selected">
-        <a ng-click="select($index)">{{option.text}}</a>
+        {{option.user}} :  <a ng-click="select($index)">{{option.text}}</a>
       </div>
     </li>
+  </ol>
+</div>
+
+<div ng-if="itemData.type == 'text-question'">
+  <ol>
+    {{ itemData.text }}
+    i'm a text question.
   </ol>
 </div>
