@@ -11,8 +11,9 @@ app.directive('fhtagnResponse', function() {
         $scope.renderNext({});
       };
       $rootScope.$on('keypress:13', function(onEvent, keypressEvent) {
-        $rootScope.keyPressed = 'Enter';
-        console.log("hereeee");
+        $scope.$apply($scope.renderNext());
+      });
+      $rootScope.$on('keypress:32', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());
       });
     }]
