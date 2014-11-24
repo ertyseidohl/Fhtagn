@@ -9,6 +9,7 @@
   <script src="./js/app.js" type="text/javascript"></script>
   <script src="./js/fhtagnScriptService.js" type="text/javascript"></script>
   <script src="./js/fhtagnController.js" type="text/javascript"></script>
+  <script src="./js/fhtagnKeypressDirective.js" type="text/javascript"></script>
   <script src="./js/fhtagnQuestionDirective.js" type="text/javascript"></script>
   <script src="./js/fhtagnStatementDirective.js" type="text/javascript"></script>
   <script src="./js/fhtagnResponseDirective.js" type="text/javascript"></script>
@@ -16,7 +17,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/animations.css">
 </head>
-<body ng-app="FhtagnApp">
+<body ng-app="FhtagnApp" fhtagn-keypress>
   <div id="content" ng-controller="fhtagnController as fhtagn">
     <div class="content-area">
       <h1 class="fhtagn-signal">Current Signal: {{ fhtagn.health }}</h1>

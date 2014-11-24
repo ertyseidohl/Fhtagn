@@ -1,4 +1,4 @@
-app.controller('fhtagnController', ['$compile', 'fhtagnScript', function($compile, fhtagnScript) {
+app.controller('fhtagnController', ['$scope', '$compile', 'fhtagnScript', function($scope, $compile, fhtagnScript) {
   this.visible = [];
   this.health = 5.0;
 
