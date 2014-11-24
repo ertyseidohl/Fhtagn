@@ -3,8 +3,8 @@
 // Constants
 var C = {
   STATEMENT : "statement",
-  MULTIPLE_QUESTION : "multiple-question",
-  TEXT_QUESTION : "text-question",
+  QUESTION_MULTIPLE : "question_multiple",
+  QUESTION_TEXT : "question_text",
   RESPONSE : "response",
   NARRATOR : "Narrator",
 }
@@ -35,7 +35,7 @@ exports.SCRIPT = {
     next : "question_1"
   },
   question_1 : {
-    type : C.MULTIPLE_QUESTION,
+    type : C.QUESTION_MULTIPLE,
     speaker : C.NARRATOR,
     options : [
       {
@@ -77,7 +77,7 @@ exports.SCRIPT = {
     next : "question_1"
   },
   question_2 : {
-    type : C.MULTIPLE_QUESTION,
+    type : C.QUESTION_MULTIPLE,
     speaker : C.NARRATOR,
     options : [
       {
@@ -120,7 +120,7 @@ exports.SCRIPT = {
     animate: "test-animate"
   },
   question_3 : {
-    type : C.TEXT_QUESTION,
+    type : C.QUESTION_TEXT,
     speaker : C.NARRATOR,
     text : "I'm a text question.",
     next : "intro_2"

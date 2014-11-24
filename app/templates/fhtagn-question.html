@@ -1,4 +1,4 @@
-<div ng-if="itemData.type == 'multiple-question'">
+<div ng-if="itemData.type == 'question_multiple'">
   <ol>
     <li ng-repeat="option in itemData.options">
       <div ng-if="option.selected">
@@ -11,7 +11,7 @@
   </ol>
 </div>
 
-<div ng-if="itemData.type == 'text-question'">
+<div ng-if="itemData.type == 'question_text'">
     {{ itemData.text }}
     <form novalidate class="simple-form">
       <input type="text" ng-model="answer" /><br />
