@@ -3,13 +3,7 @@ app.directive('fhtagnWifi', function() {
     restrict : 'E',
     templateUrl : './templates/fhtagn-wifi.html',
     scope : {
-      itemData : "=",
-      renderNext : "&"
+      signalStrength : "=",
     },
-    controller : ['$scope', function($scope) {
-      $scope.select = function(chosenQuestionIndex) {
-        $scope.renderNext({});
-      }
-    }]
   };
 });

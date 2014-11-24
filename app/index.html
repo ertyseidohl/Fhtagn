@@ -20,7 +20,7 @@
 <body ng-app="FhtagnApp">
   <div id="content" ng-controller="fhtagnController as fhtagn">
     <div class="content-area">
-      <fhtagn-wifi item-data="fhtagn.health"></fhtagn-wifi>
+      <fhtagn-wifi signal-strength="fhtagn.health"></fhtagn-wifi>
       <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
         <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question'">
           <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
