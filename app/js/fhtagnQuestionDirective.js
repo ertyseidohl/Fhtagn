@@ -12,8 +12,8 @@ app.directive('fhtagnQuestion', function() {
             //do something shnazzy with that answer.
           }
           else {
-          $scope.itemData.chosen = chosenQuestionIndex;
-          $scope.renderNext({index: $scope.itemData});
+            $scope.itemData.chosen = chosenQuestionIndex;
+            $scope.renderNext({index: $scope.itemData});
           }
       }
     }]
