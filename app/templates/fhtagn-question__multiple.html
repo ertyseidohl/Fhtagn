@@ -1,0 +1,10 @@
+<ol>
+  <li ng-repeat="option in itemData.options">
+    <div ng-if="option.selected">
+     {{option.user}}: {{option.text}}
+    </div>
+    <div ng-if="!option.selected">
+      {{option.user}}: <a ng-click="select($index)">{{option.text}}</a>
+    </div>
+  </li>
+</ol>

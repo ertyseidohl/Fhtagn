@@ -8,8 +8,13 @@ app.directive('fhtagnQuestion', function() {
     },
     controller : ['$scope', function($scope) {
       $scope.select = function(chosenQuestionIndex) {
-        $scope.itemData.chosen = chosenQuestionIndex;
-        $scope.renderNext({index: $scope.itemData});
+          if (chosenQuestionIndex.answer){
+            //do something shnazzy with that answer.
+          }
+          else {
+            $scope.itemData.chosen = chosenQuestionIndex;
+            $scope.renderNext({index: $scope.itemData});
+          }
       }
     }]
   };
