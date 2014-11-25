@@ -64,6 +64,8 @@ var ScreenBug = function(ctx) {
 	}
 	this.currentState = 'explore';
 	this.load = function() {
+		//load the images
+		//TODO make this able to handle any number of sprites
 		this.sprites[0] = new Image();
 		this.sprites[0].src = "fly-1.png";
 		this.sprites[1] = new Image();
