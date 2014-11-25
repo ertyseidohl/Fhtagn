@@ -1,22 +1,7 @@
 'use strict';
 
-//Keep track of which way the bug is turning
-var TURN_CENTER = 0;
-var TURN_LEFT = -1;
-var TURN_RIGHT = 1;
-
-//How far offscreen a bug can go before turning around
-var WINDOW_SIZE_BUFFER = 100;
-//How fast do the bugs move?
-var BUG_SPEED = 2;
-//What are the odds that a bug will change direction?
-var BUG_TURN_CHANCE = 0.9;
-//What are the odds that a bug will change sprite
-var BUG_CHANGE_SPRITE_CHANCE = 0.1;
-//How many sprites are we loading?
-var NUMBER_OF_SPRITES = 2;
-
 var ScreenBug = function(ctx) {
+
 	this.ctx = ctx;
 	this.pos = {
 		x : 0,
@@ -28,8 +13,27 @@ var ScreenBug = function(ctx) {
 	this.currentSprite = 0;
 	this.rotation = 0;
 	this.turn = 0;
-	
-	this.stateMachine = {
+	this.currentState = 'explore';
+}
+
+ScreenBug.prototype = {
+	constants = {
+		//Keep track of which way the bug is turning
+		TURN_CENTER : 0,
+		TURN_LEFT : -1,
+		TURN_RIGHT : 1,
+		//How far offscreen a bug can go before turning around
+		WINDOW_SIZE_BUFFER : 100,
+		//How fast do the bugs move?
+		BUG_SPEED : 2,
+		//What are the odds that a bug will change direction?
+		BUG_TURN_CHANCE : 0.9,
+		//What are the odds that a bug will change sprite
+		BUG_CHANGE_SPRITE_CHANCE : 0.1,
+		//How many sprites are we loading?
+		NUMBER_OF_SPRITES : 2
+	},
+	stateMachine : {
 		explore : function() {
 			this.turn = (function(turn){
 				if (Math.random() < BUG_TURN_CHANCE) return turn;
@@ -62,16 +66,34 @@ var ScreenBug = function(ctx) {
 			);
 			this.rotation = desiredRotation;
 		}
-	};
-	this.isOnStage = function() {
+	},
+	isOnStage : function() {
 		return (this.pos.x > -WINDOW_SIZE_BUFFER
 			&& this.pos.x < this.ctx.canvas.width + WINDOW_SIZE_BUFFER
 			&& this.pos.y > -WINDOW_SIZE_BUFFER
 			&& this.pos.y < this.ctx.canvas.height + WINDOW_SIZE_BUFFER
 		);
-	}
-	this.currentState = 'explore';
-	this.load = function() {
+	},
+	update : function() {
+		if (this.loaded < NUMBER_OF_SPRITES) {
+			return false;
+		}
+		this.stateMachine[this.currentState].call(this);
+		this.pos.x -= this.speed * Math.cos(this.rotation);
+		this.pos.y -= this.speed * Math.sin(this.rotation);
+	},
+	draw : function() {
+		if (this.loaded < NUMBER_OF_SPRITES) {
+			return false;
+		}
+		ctx.drawRotatedImage(this.sprites[this.currentSprite], this.pos.x, this.pos.y, this.rotation - Math.PI / 2);
+		if (Math.random() < BUG_CHANGE_SPRITE_CHANCE) {
+			if (++this.currentSprite >= this.sprites.length) {
+				this.currentSprite = 0;
+			}
+		}
+	},
+	load : function() {
 		//load the images
 		//TODO make this able to handle any number of sprites
 		this.sprites[0] = new Image();
@@ -85,36 +107,7 @@ var ScreenBug = function(ctx) {
 			this.loaded++;
 		}.bind(this);
 	}
-	this.draw = function() {
-		if (this.loaded < NUMBER_OF_SPRITES) {
-			return false;
-		}
-		ctx.drawRotatedImage(this.sprites[this.currentSprite], this.pos.x, this.pos.y, this.rotation - Math.PI / 2);
-		if (Math.random() < BUG_CHANGE_SPRITE_CHANCE) {
-			if (++this.currentSprite >= this.sprites.length) {
-				this.currentSprite = 0;
-			}
-		}
-	};
-	this.update = function() {
-		if (this.loaded < NUMBER_OF_SPRITES) {
-			return false;
-		}
-		this.stateMachine[this.currentState].call(this);
-		this.pos.x -= this.speed * Math.cos(this.rotation);
-		this.pos.y -= this.speed * Math.sin(this.rotation);
-	};
-}
-
-//draw an image rotated by angle
-function drawRotatedImage(image, x, y, angle) {
-	//via http://creativejs.com/2012/01/day-10-drawing-rotated-images-into-canvas/
-	this.save();
-	this.translate(x, y);
-	this.rotate(angle);
-	this.drawImage(image, -(image.width/2), -(image.height/2));
-	this.restore();
-}
+};
 
 //keep track of all the bugs
 var bugs = [];
@@ -122,7 +115,14 @@ var bugs = [];
 // $(document).ready(...) but with no jquery
 document.addEventListener("DOMContentLoaded", function(event) {
 	var ctx = document.getElementById('canvas').getContext('2d');
-	ctx.drawRotatedImage = drawRotatedImage;
+	ctx.drawRotatedImage = function(image, x, y, angle) {
+		//via http://creativejs.com/2012/01/day-10-drawing-rotated-images-into-canvas/
+		this.save();
+		this.translate(x, y);
+		this.rotate(angle);
+		this.drawImage(image, -(image.width/2), -(image.height/2));
+		this.restore();
+	};
 	ctx.canvas.width  = window.innerWidth;
 	ctx.canvas.height = window.innerHeight;
 	//click on the canvas to add a new bug
