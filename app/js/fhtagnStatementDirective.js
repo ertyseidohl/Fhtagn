@@ -10,10 +10,10 @@ app.directive('fhtagnStatement', function() {
       $scope.select = function() {
         $scope.renderNext({});
       };
-      $rootScope.$on('keypress:13', function(onEvent, keypressEvent) {
+      $scope.$on('keypress:13', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());
       });
-      $rootScope.$on('keypress:32', function(onEvent, keypressEvent) {
+      $scope.$on('keypress:32', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());
       });
     }]
