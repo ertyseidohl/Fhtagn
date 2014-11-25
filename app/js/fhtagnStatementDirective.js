@@ -6,14 +6,14 @@ app.directive('fhtagnStatement', function() {
       renderNext : "&"
     },
     templateUrl : './templates/fhtagn-statement.html',
-    controller : ['$scope', function($scope) {
-      $scope.select = function() {
+    controller : ['$rootScope', '$scope', function($rootScope, $scope) {
+      $rootScope.select = function() {
         $scope.renderNext({});
       };
-      $scope.$on('keypress:13', function(onEvent, keypressEvent) {
+      $rootScope.$on('keypress:13', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());
       });
-      $scope.$on('keypress:32', function(onEvent, keypressEvent) {
+      $rootScope.$on('keypress:32', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());
       });
     }]
