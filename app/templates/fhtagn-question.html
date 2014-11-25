@@ -1,12 +1,8 @@
-<div>
-  <ol>
-    <li ng-repeat="option in itemData.options">
-      <div ng-if="option.selected">
-        {{option.text}}
-      </div>
-      <div ng-if="!option.selected">
-        <a ng-click="select($index)">{{option.text}}</a>
-      </div>
-    </li>
-  </ol>
+<div ng-if="itemData.type == 'question_multiple'">
+  <div ng-include src="'templates/fhtagn-question__multiple.html'">
+  </div>
+</div>
+<div ng-if="itemData.type == 'question_text'">
+  <div ng-include="'templates/fhtagn-question__text.html'">
+  </div>
 </div>
