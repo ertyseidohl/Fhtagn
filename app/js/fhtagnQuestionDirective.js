@@ -8,14 +8,25 @@ app.directive('fhtagnQuestion', function() {
     },
     controller : ['$scope', function($scope) {
       $scope.select = function(chosenQuestionIndex) {
-          if (chosenQuestionIndex.answer){
-            //do something shnazzy with that answer.
-          }
-          else {
-            $scope.itemData.chosen = chosenQuestionIndex;
-            $scope.renderNext({index: $scope.itemData});
-          }
-      }
+        $scope.itemData.chosen = chosenQuestionIndex;
+        $scope.renderNext({index: $scope.itemData});
+      };
+      $scope.$on('keypress:49', function(onEvent, keypressEvent) {
+        $scope.itemData.chosen = 0;
+        $scope.$apply($scope.renderNext({index: $scope.itemData}));
+      });
+      $scope.$on('keypress:50', function(onEvent, keypressEvent) {
+        $scope.itemData.chosen = 1;
+        $scope.$apply($scope.renderNext({index: $scope.itemData}));
+      });
+      $scope.$on('keypress:51', function(onEvent, keypressEvent) {
+        $scope.itemData.chosen = 2;
+        $scope.$apply($scope.renderNext({index: $scope.itemData}));
+      });
+      $scope.$on('keypress:52', function(onEvent, keypressEvent) {
+        $scope.itemData.chosen = 3;
+        $scope.$apply($scope.renderNext({index: $scope.itemData}));
+      });
     }]
   };
 });
