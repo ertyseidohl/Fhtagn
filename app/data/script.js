@@ -3,7 +3,8 @@
 // Constants
 var C = {
   STATEMENT : "statement",
-  QUESTION : "question",
+  QUESTION_MULTIPLE : "question_multiple",
+  QUESTION_TEXT : "question_text",
   RESPONSE : "response",
   NARRATOR : "Narrator",
 }
@@ -34,7 +35,7 @@ exports.SCRIPT = {
     next : "question_1"
   },
   question_1 : {
-    type : C.QUESTION,
+    type : C.QUESTION_MULTIPLE,
     speaker : C.NARRATOR,
     options : [
       {
@@ -76,7 +77,7 @@ exports.SCRIPT = {
     next : "question_1"
   },
   question_2 : {
-    type : C.QUESTION,
+    type : C.QUESTION_MULTIPLE,
     speaker : C.NARRATOR,
     options : [
       {
@@ -109,7 +110,7 @@ exports.SCRIPT = {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
     text : "Excellent! You could probably tell by the username, or the fact that the comment was an initialism for 'Cthulu'. It looks like you're going to be a natural at this job. Why don't you go ahead and get started on the queue. I'll be here to check in on your progress.",
-    next : "intro_1"
+    next : "question_3"
   },
   question_2_wrong : {
     type : C.STATEMENT,
@@ -117,6 +118,12 @@ exports.SCRIPT = {
     text : "Hmm, that's actually a real-life YouToob comment. Why don't you try again...",
     next : "question_2",
     animate: "test-animate"
+  },
+  question_3 : {
+    type : C.QUESTION_TEXT,
+    speaker : C.NARRATOR,
+    text : "I'm a text question.",
+    next : "intro_2"
   }
 };
 
