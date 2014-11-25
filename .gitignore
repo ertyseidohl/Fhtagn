@@ -4,3 +4,4 @@ tmp/
 logfile
 node_modules/*
 bower_components/*
+.idea
