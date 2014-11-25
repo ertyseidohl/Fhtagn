@@ -123,9 +123,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		bug.load();
 		bugs.push(bug);
 	};
-	document.getElementById('canvas').onmousemove = function (event) {
-		var rect = this.getBoundingClientRect();
-    	this.clientX = event.clientX - rect.left;
-      	this.clientY = event.clientY - rect.top;
-	};
 });
