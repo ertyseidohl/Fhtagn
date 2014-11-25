@@ -1,8 +1,11 @@
 'use strict';
+
+//Keep track of which way the bug is turning
 var TURN_CENTER = 0;
 var TURN_LEFT = -1;
 var TURN_RIGHT = 1;
 
+//How far offscreen a bug can go before turning around
 var WINDOW_SIZE_BUFFER = 100;
 
 var ScreenBug = function(ctx) {
@@ -17,6 +20,7 @@ var ScreenBug = function(ctx) {
 	this.currentSprite = 0;
 	this.rotation = 0;
 	this.turn = 0;
+	
 	this.stateMachine = {
 		explore : function() {
 			this.turn = (function(turn){
@@ -92,6 +96,7 @@ var ScreenBug = function(ctx) {
 	};
 }
 
+//draw an image rotated by angle
 function drawRotatedImage(image, x, y, angle) {
 	//via http://creativejs.com/2012/01/day-10-drawing-rotated-images-into-canvas/
 	this.save();
@@ -101,26 +106,31 @@ function drawRotatedImage(image, x, y, angle) {
 	this.restore();
 }
 
+//keep track of all the bugs
 var bugs = [];
 
+// $(document).ready(...) but with no jquery
 document.addEventListener("DOMContentLoaded", function(event) {
-	var canvas = document.getElementById('canvas');
-	var ctx = canvas.getContext('2d');
+	var ctx = document.getElementById('canvas').getContext('2d');
 	ctx.drawRotatedImage = drawRotatedImage;
 	ctx.canvas.width  = window.innerWidth;
 	ctx.canvas.height = window.innerHeight;
-	var loop = function() {
-		ctx.clearRect (0, 0, ctx.canvas.width, ctx.canvas.height );
-		for (var i = 0; i < bugs.length; i++) {
-			bugs[i].update();
-			bugs[i].draw();
-		}
-		window.requestAnimationFrame(loop);
-	}
-	loop();
+	//click on the canvas to add a new bug
 	document.getElementById('canvas').onclick = function () {
 		var bug = new ScreenBug(ctx);
 		bug.load();
 		bugs.push(bug);
 	};
+	var loop = function() {
+		//clear the canvas at the beginning of each frame
+		ctx.clearRect (0, 0, ctx.canvas.width, ctx.canvas.height);
+		for (var i = 0; i < bugs.length; i++) {
+			//update and draw (don't care about collisions)
+			bugs[i].update();
+			bugs[i].draw();
+		}
+		window.requestAnimationFrame(loop);
+	}
+	//Start the animationFrame loop
+	loop();
 });
