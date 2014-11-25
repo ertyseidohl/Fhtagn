@@ -6,7 +6,7 @@ app.directive('fhtagnQuestion', function() {
       itemData : "=",
       renderNext : "&"
     },
-    controller : ['$scope', '$rootScope', function($scope, $rootScope) {
+    controller : ['$scope', function($scope) {
       $scope.select = function(chosenQuestionIndex) {
         $scope.itemData.chosen = chosenQuestionIndex;
         $scope.renderNext({index: $scope.itemData});

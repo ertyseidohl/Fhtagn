@@ -6,7 +6,7 @@ app.directive('fhtagnStatement', function() {
       renderNext : "&"
     },
     templateUrl : './templates/fhtagn-statement.html',
-    controller : ['$scope', '$rootScope', function($scope, $rootScope) {
+    controller : ['$scope', function($scope) {
       $scope.select = function() {
         $scope.renderNext({});
       };
