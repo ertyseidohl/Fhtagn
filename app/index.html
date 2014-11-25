@@ -22,8 +22,8 @@
   <div id="content" ng-controller="fhtagnController as fhtagn">
     <div class="content-area">
       <fhtagn-wifi signal-strength="fhtagn.health"></fhtagn-wifi>
-      <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
-        <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question_text' ||
+      <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate-children>
+        <div class="fhtagn-question" ng-if="item.type == 'question_text' ||
           item.type == 'question_multiple'">
           <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
         </div>
