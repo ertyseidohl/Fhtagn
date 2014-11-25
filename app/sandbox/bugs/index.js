@@ -7,6 +7,14 @@ var TURN_RIGHT = 1;
 
 //How far offscreen a bug can go before turning around
 var WINDOW_SIZE_BUFFER = 100;
+//How fast do the bugs move?
+var BUG_SPEED = 2;
+//What are the odds that a bug will change direction?
+var BUG_TURN_CHANCE = 0.9;
+//What are the odds that a bug will change sprite
+var BUG_CHANGE_SPRITE_CHANCE = 0.1;
+//How many sprites are we loading?
+var NUMBER_OF_SPRITES = 2;
 
 var ScreenBug = function(ctx) {
 	this.ctx = ctx;
@@ -14,7 +22,7 @@ var ScreenBug = function(ctx) {
 		x : 0,
 		y : 0
 	};
-	this.speed = 2;
+	this.speed = BUG_SPEED;
 	this.sprites = [];
 	this.loaded = 0;
 	this.currentSprite = 0;
@@ -24,7 +32,7 @@ var ScreenBug = function(ctx) {
 	this.stateMachine = {
 		explore : function() {
 			this.turn = (function(turn){
-				if (Math.random() < 0.9) return turn;
+				if (Math.random() < BUG_TURN_CHANCE) return turn;
 				switch(turn) {
 					case TURN_LEFT: return TURN_CENTER;
 					case TURN_CENTER: return Math.random() > 0.5 ? TURN_LEFT : TURN_RIGHT;
@@ -78,18 +86,18 @@ var ScreenBug = function(ctx) {
 		}.bind(this);
 	}
 	this.draw = function() {
-		if (this.loaded < 2) {
+		if (this.loaded < NUMBER_OF_SPRITES) {
 			return false;
 		}
 		ctx.drawRotatedImage(this.sprites[this.currentSprite], this.pos.x, this.pos.y, this.rotation - Math.PI / 2);
-		if (Math.random() > 0.9) {
+		if (Math.random() < BUG_CHANGE_SPRITE_CHANCE) {
 			if (++this.currentSprite >= this.sprites.length) {
 				this.currentSprite = 0;
 			}
 		}
 	};
 	this.update = function() {
-		if (this.loaded < 2) {
+		if (this.loaded < NUMBER_OF_SPRITES) {
 			return false;
 		}
 		this.stateMachine[this.currentState].call(this);
