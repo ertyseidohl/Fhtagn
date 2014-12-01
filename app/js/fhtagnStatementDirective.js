@@ -7,8 +7,23 @@ app.directive('fhtagnStatement', function() {
     },
     templateUrl : './templates/fhtagn-statement.html',
     controller : ['$rootScope', '$scope', function($rootScope, $scope) {
-      $rootScope.select = function() {
-        $scope.renderNext({});
+      $scope.visibleItemText = 0;
+      $scope.getText = function() {
+        if (typeof(this.itemData.text) === "string") {
+          return this.itemData.text;
+        } else {
+          return this.itemData.text[this.visibleItemText];
+        }
+      };
+      $scope.select = function() {
+        if (typeof(this.itemData.text) === "string") {
+          $scope.renderNext({});
+        } else {
+          $scope.visibleItemText ++;
+          if ($scope.visibleItemText >= $scope.itemData.text.length) {
+            $scope.renderNext({});
+          }
+        }
       };
       $scope.$on('keypress:13', function(onEvent, keypressEvent) {
         $scope.$apply($scope.renderNext());

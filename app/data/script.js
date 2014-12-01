@@ -25,7 +25,12 @@ exports.SCRIPT = {
   intro_1 : {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
-    text : "Ah, welcome welcome. I see you're new here. We'll be walking you through your new job today. As a community manager, it's your job to find the truly crazy comments among the ones that just look crazy! Ha ha, people are sometimes so strange.",
+    text : [
+      "Ah, welcome welcome. I see you're new here.",
+      "We'll be walking you through your new job today.",
+      "As a community manager, it's your job to find the truly crazy comments among the ones that just look crazy!",
+      "Ha ha, people are sometimes so strange."
+    ],
     next : "intro_2"
   },
   intro_2 : {
