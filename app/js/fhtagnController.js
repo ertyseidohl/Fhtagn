@@ -2,13 +2,13 @@ app.controller('fhtagnController', ['$scope', '$compile', 'fhtagnScript', functi
   this.visible = [];
   this.health = 5.0;
 
-  this.renderNext = function(index) {
+  this.renderNext = function(parentQuestionWithChosen) {
     var item = false;
-    if(typeof(index) === "undefined") {
+    if(typeof(parentQuestionWithChosen) === "undefined") {
       item = fhtagnScript.getNextScriptItem();
     }
     else {
-      response = fhtagnScript.getResponseItem(index);
+      response = fhtagnScript.getResponseItem(parentQuestionWithChosen);
       item = response;
       this.health = this.health + item.healthModifier;
     }
