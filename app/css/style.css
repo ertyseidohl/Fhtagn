@@ -6,7 +6,7 @@ html, body {
   background-color: #8EB12A; }
 
 .content-area {
-  background-color: #ccc;
+  background-color: #eee;
   width: 75%;
   margin: 0 auto;
   padding: 1em; }
@@ -33,17 +33,14 @@ a:hover {
 /*Strong signal*/
 .iconic-signal.iconic-signal-strong .iconic-signal-base {
   fill: #569e26; }
-
 .iconic-signal.iconic-signal-strong .iconic-signal-wave * {
   stroke: #569e26; }
 
 /*Medium signal*/
 .iconic-signal.iconic-signal-medium .iconic-signal-base {
   fill: #efc411; }
-
 .iconic-signal.iconic-signal-medium .iconic-signal-wave * {
   stroke: #efc411; }
-
 .iconic-signal.iconic-signal-medium .iconic-signal-wave-outer {
   opacity: .3;
   stroke-width: .5; }
@@ -51,10 +48,8 @@ a:hover {
 /*Weak signal*/
 .iconic-signal.iconic-signal-weak .iconic-signal-base {
   fill: #b52808; }
-
 .iconic-signal.iconic-signal-weak .iconic-signal-wave * {
   stroke: #b52808; }
-
 .iconic-signal.iconic-signal-weak .iconic-signal-wave-outer,
 .iconic-signal.iconic-signal-weak .iconic-signal-wave-middle {
   opacity: .3;
@@ -63,7 +58,6 @@ a:hover {
 /*No signal*/
 .iconic-signal.iconic-signal-none .iconic-signal-base {
   fill: #848484; }
-
 .iconic-signal.iconic-signal-none .iconic-signal-wave * {
   stroke: #848484;
   opacity: .3;

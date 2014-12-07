@@ -1,42 +1,50 @@
 /*Strong signal*/
-.iconic-signal.iconic-signal-strong .iconic-signal-base {
-    fill: $wifi-green;
-}
-.iconic-signal.iconic-signal-strong .iconic-signal-wave * {
-    stroke: $wifi-green;
+.iconic-signal.iconic-signal-strong {
+    .iconic-signal-base {
+        fill: $wifi-green;
+    }
+    .iconic-signal-wave * {
+        stroke: $wifi-green;
+    }
 }
 
 /*Medium signal*/
-.iconic-signal.iconic-signal-medium .iconic-signal-base {
-    fill: $wifi-yellow;
-}
-.iconic-signal.iconic-signal-medium .iconic-signal-wave * {
-    stroke: $wifi-yellow;
-}
-.iconic-signal.iconic-signal-medium .iconic-signal-wave-outer {
-    opacity:.3;
-    stroke-width:.5;
+.iconic-signal.iconic-signal-medium {
+    .iconic-signal-base {
+        fill: $wifi-yellow;
+    }
+    .iconic-signal-wave * {
+        stroke: $wifi-yellow;
+    }
+    .iconic-signal-wave-outer {
+        opacity:.3;
+        stroke-width:.5;
+    }
 }
 
 /*Weak signal*/
-.iconic-signal.iconic-signal-weak .iconic-signal-base {
-    fill: $wifi-red;
-}
-.iconic-signal.iconic-signal-weak .iconic-signal-wave * {
-    stroke: $wifi-red;
-}
-.iconic-signal.iconic-signal-weak .iconic-signal-wave-outer ,
-.iconic-signal.iconic-signal-weak .iconic-signal-wave-middle {
-    opacity:.3;
-    stroke-width:.5;
+.iconic-signal.iconic-signal-weak {
+    .iconic-signal-base {
+       fill: $wifi-red;
+    }
+    .iconic-signal-wave * {
+        stroke: $wifi-red;
+    }
+    .iconic-signal-wave-outer ,
+    .iconic-signal-wave-middle {
+        opacity:.3;
+        stroke-width:.5;
+    }
 }
 
 /*No signal*/
-.iconic-signal.iconic-signal-none .iconic-signal-base {
-    fill: $wifi-grey;
-}
-.iconic-signal.iconic-signal-none .iconic-signal-wave * {
-    stroke: $wifi-grey;
-    opacity:.3;
-    stroke-width:.5;
+.iconic-signal.iconic-signal-none {
+    .iconic-signal-base {
+        fill: $wifi-grey;
+    }
+    .iconic-signal-wave * {
+        stroke: $wifi-grey;
+        opacity:.3;
+        stroke-width:.5;
+    }
 }
