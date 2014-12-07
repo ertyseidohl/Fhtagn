@@ -6,19 +6,10 @@ html, body {
   background-color: #8EB12A; }
 
 .content-area {
-  background-color: #eee;
+  background-color: #eeeed9;
   width: 75%;
   margin: 0 auto;
   padding: 1em; }
-
-a {
-  cursor: pointer;
-  margin: 0 5px;
-  font-weight: bold;
-  color: #A34043; }
-
-a:hover {
-  text-decoration: underline; }
 
 /* Elements */
 .fhtagn-statement {
@@ -65,5 +56,6 @@ a:hover {
 
 .fhtagn-item {
   background-color: #fff;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; }
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  cursor: pointer; }

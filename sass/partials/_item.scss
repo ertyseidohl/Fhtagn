@@ -1,5 +1,6 @@
 .fhtagn-item {
 	background-color: #fff;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-right: 1px solid $shadow-grey;
+	border-bottom: 1px solid $shadow-grey;
+	cursor: pointer;
 }
