@@ -1,8 +1,10 @@
-<div ng-if="itemData.type == 'question_multiple'">
-  <div ng-include src="'templates/fhtagn-question__multiple.html'">
+<div class="fhtagn-item fhtagn-item--question">
+  <div ng-if="itemData.type == 'question_multiple'">
+    <div ng-include src="'templates/fhtagn-question__multiple.html'">
+    </div>
   </div>
-</div>
-<div ng-if="itemData.type == 'question_text'">
-  <div ng-include="'templates/fhtagn-question__text.html'">
+  <div ng-if="itemData.type == 'question_text'">
+    <div ng-include="'templates/fhtagn-question__text.html'">
+    </div>
   </div>
 </div>

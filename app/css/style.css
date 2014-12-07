@@ -8,18 +8,11 @@ html, body {
 .content-area {
   background-color: #eeeed9;
   width: 75%;
-  margin: 0 auto;
-  padding: 1em; }
-
-/* Elements */
-.fhtagn-statement {
-  padding: 1em; }
-
-.fhtagn-response {
-  padding: 1em; }
-
-.fhtagn-question {
-  padding: 1em; }
+  margin: 1em auto;
+  padding: 1em;
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  border-radius: 3px; }
 
 /*Strong signal*/
 .iconic-signal.iconic-signal-strong .iconic-signal-base {
@@ -58,4 +51,30 @@ html, body {
   background-color: #fff;
   border-right: 1px solid #ccccb9;
   border-bottom: 1px solid #ccccb9;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 3px; }
+
+/* Multiple Choice Questions */
+.fhtagn-options-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+.fhtagn-option {
+  border-radius: 3px;
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  background-color: #B5B210;
+  padding: 1em;
+  margin-left: 0;
+  margin-top: 1em;
+  font-weight: bold; }
+  .fhtagn-option:hover {
+    background-color: #8EB12A; }
+
+.fhtagn-option--selected,
+.fhtagn-option--selected:hover {
+  background-color: #eeeed9;
+  cursor: default;
+  font-weight: normal; }

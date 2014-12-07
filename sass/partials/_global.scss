@@ -9,28 +9,9 @@ html, body {
 .content-area {
   background-color: $light-grey;
   width: 75%;
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 1em;
-}
-
-/* Elements */
-
-.fhtagn-statement {
-  padding: 1em;
-}
-
-.fhtagn-statement__speaker {
-
-}
-
-.fhtagn-response {
-  padding: 1em;
-}
-
-.fhtagn-response__speaker {
-
-}
-
-.fhtagn-question {
-  padding: 1em;
+  border-right: 1px solid $shadow-grey;
+  border-bottom: 1px solid $shadow-grey;
+  border-radius: $border-radius;
 }
