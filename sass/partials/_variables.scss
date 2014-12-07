@@ -16,3 +16,12 @@ $wifi-red: #b52808;
 $wifi-yellow: #efc411;
 
 $border-radius: 3px;
+
+@mixin no-select() {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

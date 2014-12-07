@@ -5,6 +5,7 @@
   cursor: pointer;
   padding: 1em;
   border-radius: $border-radius;
+  @include no-select;
 }
 
 /* Multiple Choice Questions */
