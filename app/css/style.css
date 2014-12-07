@@ -6,7 +6,7 @@ html, body {
   background-color: #8EB12A; }
 
 .content-area {
-  background-color: white;
+  background-color: #ccc;
   width: 75%;
   margin: 0 auto;
   padding: 1em; }
@@ -68,3 +68,8 @@ a:hover {
   stroke: #848484;
   opacity: .3;
   stroke-width: .5; }
+
+.fhtagn-item {
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }

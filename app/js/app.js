@@ -1,1 +1,1 @@
-var app = angular.module('FhtagnApp',['ngAnimate', 'screenAnimations' ]);
+var app = angular.module('FhtagnApp',['ngAnimate', 'screenAnimations']);
