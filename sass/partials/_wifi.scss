@@ -5,7 +5,7 @@
 .iconic-signal.iconic-signal-strong .iconic-signal-wave * {
     stroke: $wifi-green;
 }
- 
+
 /*Medium signal*/
 .iconic-signal.iconic-signal-medium .iconic-signal-base {
     fill: $wifi-yellow;
@@ -17,7 +17,7 @@
     opacity:.3;
     stroke-width:.5;
 }
- 
+
 /*Weak signal*/
 .iconic-signal.iconic-signal-weak .iconic-signal-base {
     fill: $wifi-red;
@@ -30,7 +30,7 @@
     opacity:.3;
     stroke-width:.5;
 }
- 
+
 /*No signal*/
 .iconic-signal.iconic-signal-none .iconic-signal-base {
     fill: $wifi-grey;
