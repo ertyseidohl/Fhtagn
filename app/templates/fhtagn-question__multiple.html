@@ -1,10 +1,10 @@
-<ol>
-  <li ng-repeat="option in itemData.options">
-    <div ng-if="option.selected">
+<ol class="fhtagn-options-list">
+  <li
+  	ng-repeat="option in itemData.options"
+  	ng-click="select($index)"
+  	class="fhtagn-option"
+  	ng-class="{'fhtagn-option--selected' : option.selected}"
+  >
      {{option.user}}: {{option.text}}
-    </div>
-    <div ng-if="!option.selected">
-      {{option.user}}: <a ng-click="select($index)">{{option.text}}</a>
-    </div>
   </li>
 </ol>

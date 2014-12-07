@@ -1,0 +1,39 @@
+.fhtagn-item {
+  background-color: #fff;
+  border-right: 1px solid $shadow-grey;
+  border-bottom: 1px solid $shadow-grey;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: $border-radius;
+  @include no-select;
+}
+
+/* Multiple Choice Questions */
+.fhtagn-options-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fhtagn-option {
+  border-radius: $border-radius;
+  border-right: 1px solid $shadow-grey;
+  border-bottom: 1px solid $shadow-grey;
+  background-color: $yellow-green;
+  padding: 1em;
+  margin-left: 0;
+  margin-top: 1em;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $light-green;
+  }
+}
+
+.fhtagn-option--selected,
+.fhtagn-option--selected:hover {
+  background-color: $light-grey;
+  cursor: default;
+  font-weight: normal;
+}
+

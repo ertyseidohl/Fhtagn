@@ -22,15 +22,23 @@
   <div id="content" ng-controller="fhtagnController as fhtagn">
     <div class="content-area">
       <fhtagn-wifi signal-strength="fhtagn.health"></fhtagn-wifi>
-      <div class="fhtagn-item" ng-repeat="item in fhtagn.visible" ng-animate>
-        <div class="fhtagn-question {{ item.animate }}" ng-if="item.type == 'question_text' ||
-          item.type == 'question_multiple'">
+      <div class="fhtagn-item-container" ng-repeat="item in fhtagn.visible" ng-animate>
+        <div
+          class="fhtagn-question {{ item.animate }}"
+          ng-if="item.type == 'question_text' || item.type == 'question_multiple'"
+        >
           <fhtagn-question item-data="item" render-next="fhtagn.renderNext(index)"></fhtagn-question>
         </div>
-        <div class="fhtagn-statement {{ item.animate }}" ng-if="item.type == 'statement'">
+        <div
+          class="fhtagn-statement {{ item.animate }}"
+          ng-if="item.type == 'statement'"
+        >
           <fhtagn-statement item-data="item" render-next="fhtagn.renderNext()"></fhtagn-statement>
         </div>
-        <div class="fhtagn-response {{ item.animate }}" ng-if="item.type == 'response'">
+        <div
+          class="fhtagn-response {{ item.animate }}"
+          ng-if="item.type == 'response'"
+        >
           <fhtagn-response item-data="item" render-next="fhtagn.renderNext()"></fhtagn-response>
         </div>
       </div>

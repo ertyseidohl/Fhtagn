@@ -1,92 +1,86 @@
 /* Main styles */
-/* line 2, /Users/cea/dev/Fhtagn/sass/partials/global */
 html, body {
   margin: 0;
   padding: 0;
   color: #1C2B1B;
   background-color: #8EB12A; }
 
-/* line 9, /Users/cea/dev/Fhtagn/sass/partials/global */
 .content-area {
-  background-color: white;
+  background-color: #eeeed9;
   width: 75%;
-  margin: 0 auto;
-  padding: 1em; }
-
-/* line 16, /Users/cea/dev/Fhtagn/sass/partials/global */
-a {
-  cursor: pointer;
-  margin: 0 5px;
-  font-weight: bold;
-  color: #A34043; }
-
-/* line 23, /Users/cea/dev/Fhtagn/sass/partials/global */
-a:hover {
-  text-decoration: underline; }
-
-/* Elements */
-/* line 29, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-statement {
-  padding: 1em; }
-
-/* line 37, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-response {
-  padding: 1em; }
-
-/* line 45, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-question {
-  padding: 1em; }
-
-/* line 49, /Users/cea/dev/Fhtagn/sass/partials/global */
-.fhtagn-signal {
-  color: #338855; }
+  margin: 1em auto;
+  padding: 1em;
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  border-radius: 3px; }
 
 /*Strong signal*/
-/* line 2, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-strong .iconic-signal-base {
   fill: #569e26; }
-
-/* line 5, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-strong .iconic-signal-wave * {
   stroke: #569e26; }
 
 /*Medium signal*/
-/* line 10, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-medium .iconic-signal-base {
   fill: #efc411; }
-
-/* line 13, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-medium .iconic-signal-wave * {
   stroke: #efc411; }
-
-/* line 16, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-medium .iconic-signal-wave-outer {
-  opacity: 0.3;
-  stroke-width: 0.5; }
+  opacity: .3;
+  stroke-width: .5; }
 
 /*Weak signal*/
-/* line 22, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-weak .iconic-signal-base {
   fill: #b52808; }
-
-/* line 25, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-weak .iconic-signal-wave * {
   stroke: #b52808; }
-
-/* line 29, /Users/cea/dev/Fhtagn/sass/partials/wifi */
-.iconic-signal.iconic-signal-weak .iconic-signal-wave-outer, .iconic-signal.iconic-signal-weak .iconic-signal-wave-middle {
-  opacity: 0.3;
-  stroke-width: 0.5; }
+.iconic-signal.iconic-signal-weak .iconic-signal-wave-outer,
+.iconic-signal.iconic-signal-weak .iconic-signal-wave-middle {
+  opacity: .3;
+  stroke-width: .5; }
 
 /*No signal*/
-/* line 35, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-none .iconic-signal-base {
   fill: #848484; }
-
-/* line 38, /Users/cea/dev/Fhtagn/sass/partials/wifi */
 .iconic-signal.iconic-signal-none .iconic-signal-wave * {
   stroke: #848484;
-  opacity: 0.3;
-  stroke-width: 0.5; }
+  opacity: .3;
+  stroke-width: .5; }
 
-/*# sourceMappingURL=style.css.map */
+.fhtagn-item {
+  background-color: #fff;
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Multiple Choice Questions */
+.fhtagn-options-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+.fhtagn-option {
+  border-radius: 3px;
+  border-right: 1px solid #ccccb9;
+  border-bottom: 1px solid #ccccb9;
+  background-color: #B5B210;
+  padding: 1em;
+  margin-left: 0;
+  margin-top: 1em;
+  font-weight: bold; }
+  .fhtagn-option:hover {
+    background-color: #8EB12A; }
+
+.fhtagn-option--selected,
+.fhtagn-option--selected:hover {
+  background-color: #eeeed9;
+  cursor: default;
+  font-weight: normal; }
