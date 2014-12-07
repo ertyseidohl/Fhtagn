@@ -15,7 +15,7 @@ exports.SCRIPT_START = "root";
 exports.SCRIPT = {
   root : {
     //exists just to kick off the game
-    next : "intro_1"
+    next : "intro"
   },
   loss : {
       type : C.STATEMENT,
@@ -23,7 +23,7 @@ exports.SCRIPT = {
       text: "YOU LOSE.",
       next: "intro_1"
   },
-  intro_1 : {
+  intro : {
     type : C.STATEMENT,
     speaker : C.NARRATOR,
     text : [
@@ -31,14 +31,9 @@ exports.SCRIPT = {
       "We'll be walking you through your new job today.",
       "As a community manager, it's your job to find the truly crazy comments among the ones that just look crazy!",
       "Ha ha",
-      "People are sometimes so strange."
+      "People are sometimes so strange.",
+      "Why don't you try. Here's a random sampling of comments from a YouToob video. Just go ahead and select the comment by a worshipper of The Dark One."
     ],
-    next : "intro_2"
-  },
-  intro_2 : {
-    type : C.STATEMENT,
-    speaker : C.NARRATOR,
-    text : "Why don't you try. Here's a random sampling of comments from a YouToob video. Just go ahead and select the comment by a worshipper of The Dark One.",
     next : "question_a"
   },
   question_a : {
