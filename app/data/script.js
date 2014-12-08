@@ -497,114 +497,173 @@ exports.SCRIPT = {
 
 })(window);
 
+/*
 
+question_x : {
+  options : [
+    {
+      user : "william rivera",
+      text : "YEAH MY CAPSLOCK IS BROKEN BUT ONLY IN YOUR MIND"
+    },
+    {
+      user : "curtis peers",
+      text : "When the legion comes Medan will need to protect and we won't know what to do. This will be perfect timing for Medivh to truly atone for his/sargeras' sins"
+    },
+    {
+      user : "Chris Rice",
+      text : "good job brother,evil is evil,he was part of killing the last true president of america.hell has a place for him.rest in peace john kennedy,and lee oswald."
+    },
+    {
+      user : "Howard 'Lovemachine' Phillips",
+      text : "Hello every1 awesome videos here btw if anyone wants to download books 4 free like The Doom That Came To Sarnath click on my name see ya soon xoxo"
+    }
+  ]
+},
+question_x_correct : {
+  speaker : C.NARRATOR,
+  text : "Good job! The Doom That Came To Sarnath is a Lovecraft short story about the ancient land of Mnar, and the hatred and vengeance which turned it to ashes after a thousand years."
+},
+question_xa : {
+  options : [
+    {
+      user : "Pastor Todd Lerfondler",
+      text : "What do I see here? Three of the numbers you got when approaching the jackpot where "666". 666 = the devil. Your win was influenced by Satan to encourage the public into thinking that you are a "God". Well, I'm going to say it here and now; you're not. You're a fucking loser. Pastor Todd over an' out. With faith, Pastor Todd L. Fondler"
+      // is this a duplicate?
+    },
+    {
+      user : "Luke Fearnley",
+      text : "FUCK EVERYONE FUCKING ARBITER HOLY SHITE AND ONION SOUP"
+    },
+    {
+      user : "monkeyplayer258",
+      text : "HEY HEY HEY, come into my shed! we serve moist and yummy brains! come to fluttershys brain diner and say derpytoaster to get the rainbow dash special!"
+      //hey hey hey
+    },
+    {
+      user : "Dagons Shadow",
+      text : "ENGLISH TRANSLATION OF THE LYRICS: Look to the future, not to the past/This world is short and will not last/Behind is done/Ahead's yet to come/The stone shall call the chosen one./Through nameless ooze the god shall crawl/Transforming earth to unhallowed halls/The god shall rise/Beware his cries/Go forth, in fear, and say your goodbyes."
+    }
+  ]
+},
+question_xb : {
+  options : [
+    {
+      user : "Abba Okoro",
+      text : "It's Government holding back medicine. #justsaying"
+    },
+    {
+      user : "BladeOfLight16",
+      text : "&ldquo;If men were angels, no government would be necessary.&rdquo; What's wrong with communism is that it makes the assumption that humans are capable of reaching such a point because they are merely products of their environment. I would strongly disagree and argue that humans are fundamentally flawed. Marx was certainly wrong in just about every prediction he made based on that assumption."
+    },
+    {
+      user : "Zartymil",
+      text : "THANK YOU DUDE! RIGHT IN THE FEELINGS DUDE! RIGHT THERE! I FEEL GOOD DUDE"
+    },
+    {
+      user : "RlyRlyOld",
+      text : "Read the fucking description, asshole, it's a GRIMOIRE not a fucking MONSTER MANUAL and it's pronounced "Wermis" as in "of the Worm" not like fucking vermin DON'T YOU KNOW YOUR FUCKING LATIN jesus christ you sound like such a fucking joke you obviously don't know what the fuck you're talking about I hope you get burned at the stake"
+    }
+  ]
+},
+question_xb_correct : {
+  speaker : C.NARRATOR,
+  text : "(Well that certainly had some fire and brimstone in it! De Vermis Mysteriis (pronounced &ldquo;De Wermis Mysteriis&rdquo; in modern/Oxford Latin) is a grimoire written by the alchemist, necromancer, and reputed mage Ludwig Prinn, who was burned at the stake at the height of the witch trials in Brussels.)"
+},
+question_xc : {
+  options : [
+    {
+      user : "Alex the Lion",
+      text : "How is there 31 million views when youtube doesnt even exist?"
+    },
+    {
+      user : "Emily Doolittle",
+      text : "I think, therefore I am reminds me of solipsism."
+    },
+    {
+      user : "greenechri",
+      text : "How the fuck, when the fuck, and why the fuck did I get here?@!?!? i just wanted to make some homemade cheesecake people, >.>"
+    },
+    {
+      user : "XxXFallingInLovecraftXxX",
+      text : "yo i watched this video and saw a fuckin elephant-sized bird fly straight out of the screen into my room, it bit me with its horse-head and the darkness consumed me, the fucked up thing is i dont even own a computer"
+    }
+  ]
+},
+question_xc_correct : {
+  speaker : C.NARRATOR,
+  text : "Yep! Sounds like this user is describing a Shantak, a huge, scaly, birdlike creature from the nether realms – they're clearly trying to recruit other users into the cult!"
+},
+question_xd : {
+ options : [
+  {
+    user : "james pryor",
+    text : "i have a question. is Shrek a religion?"
+  },
+  {
+    user : "john trollston",
+    text : "ahem!... PFRTRFT oops, draw cubes draw cubes draw cudes draw cubes."
+  },
+  {
+    user : "Dopest",
+    text : "Everyone please pray I'm not trying to be a buzz kill but in telling you it will help a lot just like it helped me please its for you just believe in Jesus to receive help.Thank you."
+  },
+  {
+    user : "JustElderThings",
+    text : "the native americans had it right pray to the stones and to the bones and you will be saved the sentinels are watching"
+  }
+ ]
+},
+question_xd_correct : {
+  speaker : C.NARRATOR,
+  text : "Sentinel Hill is the site of an ancient stone altar where profane rituals were performed at the birth of the Dunwich Horror. Good catch!"
+},
+question_xe : {
+  options : [
+    {
+      user : "jenna bartley",
+      text : "I told my mother this and she told me i was wrong and that I shouldn't listen to people who tell me these things. SCIENTISTS believed up until the 80's that babies didn't need anesthesia during surgery. clearly people know better know. why is this any different?﻿"
+    },
+    {
+      user : "mariana Narvaez",
+      text : "I had that rare condition it was not pleasant"
+    },
+    {
+      user : "autumn laymy",
+      text : "when she said not master baiting regularly is it healthy to masterbait",
+    },
+    {
+      user : "Old Whateley",
+      text : "ALL'A YEW DAMN PRO-LIFERS ARE TH' REASON THIS WORLD IS DESCENDING INTO AN ABYSSAL HELL! MY DAUGHTER SHOULDA KNOWN BETTER THAN T' GET PREGNANT IN THE FIRST PLACE, NOW THAT HORRIBLE LITTLE BASTARD CHILD IS RUNNIN' WILD ON TH' WHOLE TOWN! " 
+    }
+  ]
+},
+question_xe_correct : {
+  speaker : C.NARRATOR,
+  text : "That's right! The Wizard Whateley is a weak-chinned, aged man, obsessed with rotting ancient books about the Great Old Ones. His albino daughter Lavinia summoned Yog-Sothoth and was impregnated by Him, giving birth to twins – one human, one decidedly not."
+},
+question_xf : {
+  options : [
+    {
+      user : "Jimmy Quick",
+      text : "TWO WORDS - woman lie. Learn them and be the master of your own existence. Fail this lesson and become a slave to stupidity for your entire life. Signed, Someone who knows"
+    },
+    {
+      user : "Jessica Hoover",
+      text : "I think I'm in love with you. You do what I want to do for a living. you're literally my idol."
+    },
+    {
+      user : "Anthony Reich",
+      text : "In a video tell me how the helicopter you have over a million subscribers talking about the vagina"
+    },
+    {
+      user : "William Dyer",
+      text : "This video takes place at the mountains of madness – you can tell by the pixels, I have seen such things before"
+    }
+  ]
+},
+question_xf_correct : {
+  speaker : C.NARRATOR,
+  text : "That's right! William Dyer is the narrator of At The Mountains of Madness, a Lovecraftian novel."
+}
 
-william rivera
-YEAH MY CAPSLOCK IS BROKEN BUT ONLY IN YOUR MIND
-
-curtis peers
-When the legion comes Medan will need to protect and we won't know what to do. This will be perfect timing for Medivh to truly atone for his/sargeras' sins
-
-Chris Rice
-good job brother,evil is evil,he was part of killing the last true president of america.hell has a place for him.rest in peace john kennedy,and lee oswald.
-
-Howard 'Lovemachine' Phillips
-Hello every1 awesome videos here btw if anyone wants to download books 4 free like The Doom That Came To Sarnath click on my name see ya soon xoxo
-(Good job! The Doom That Came To Sarnath is a Lovecraft short story about the ancient land of Mnar, and the hatred and vengeance which will turn it to ashes over a thousand years.) 
-
-
-
-Pastor Todd Lerfondler
-What do I see here? Three of the numbers you got when approaching the jackpot where "666". 666 = the devil. Your win was influenced by Satan to encourage the public into thinking that you are a "God". Well, I'm going to say it here and now; you're not. You're a fucking loser. Pastor Todd over an' out. With faith, Pastor Todd L. Fondler
-
-Luke Fearnley
-FUCK EVERYONE FUCKING ARBITER HOLY SHITE AND ONION SOUP
-
-monkeyplayer258
-HEY HEY HEY, come into my shed! we serve moist and yummy brains! come to fluttershys brain diner and say derpytoaster to get the rainbow dash special!
-
-Dagons Shadow
-ENGLISH TRANSLATION OF THE LYRICS: Look to the future, not to the past/This world is short and will not last/Behind is done/Ahead's yet to come/The stone shall call the chosen one./Through nameless ooze the god shall crawl/Transforming earth to unhallowed halls/The god shall rise/Beware his cries/Go forth, in fear, and say your goodbyes.
-
-
-
-Abba Okoro
-It's Government holding back medicine. #justsaying
-
-BladeOfLight16
-"If men were angels, no government would be necessary." What's wrong with communism is that it makes the assumption that humans are capable of reaching such a point because they are merely products of their environment. I would strongly disagree and argue that humans are fundamentally flawed. Marx was certainly wrong in just about every prediction he made based on that assumption.
-
-Zartymil
-THANK YOU DUDE! RIGHT IN THE FEELINGS DUDE! RIGHT THERE! I FEEL GOOD DUDE
-
-RlyRlyOld
-Read the fucking description, asshole, it's a GRIMOIRE not a fucking MONSTER MANUAL and it's pronounced "Wermis" as in "of the Worm" not like fucking vermin DON'T YOU KNOW YOUR FUCKING LATIN jesus christ you sound like such a fucking joke you obviously don't know what the fuck you're talking about I hope you get burned at the stake
-
-(Well that certainly had some fire and brimstone in it! De Vermis Mysteriis (pronounced "De Wermis Mysteriis" in modern/Oxford Latin) is a grimoire written by the alchemist, necromancer, and reputed mage Ludwig Prinn, who was burned at the stake at the height of the witch trials in Brussels.)
-
-
-
-Alex the Lion
-How is there 31 million views when youtube doesnt even exist?
-
-Emily Doolittle
-I think, therefore I am reminds me of solipsism.
-
-greenechri
-How the fuck, when the fuck, and why the fuck did I get here?@!?!? i just wanted to make some homemade cheesecake people, >.>
-
-XxXFallingInLovecraftXxX
-yo i watched this video and saw a fuckin elephant-sized bird fly straight out of the screen into my room, it bit me with its horse-head and the darkness consumed me, the fucked up thing is i dont even own a computer
-
-(Yep! Sounds like this user is describing a Shantak, a huge, scaly, birdlike creature from the nether realms – they're clearly trying to recruit other users into the cult!)
-
-
-
-james pryor
-i have a question. is Shrek a religion?
-
-john trollston
-ahem!... PFRTRFT oops, draw cubes draw cubes draw cudes draw cubes.
-
-Dopest
-Everyone please pray I'm not trying to be a buzz kill but in telling you it will help a lot just like it helped me please its for you just believe in Jesus to receive help.Thank you.
-
-JustElderThings
-the native americans had it right pray to the stones and to the bones and you will be saved the sentinels are watching
-
-(Sentinel Hill is the site of an ancient stone altar where profane rituals were performed at the birth of the Dunwich Horror. Good catch!)
-
-
-
-jenna bartley
-I told my mother this and she told me i was wrong and that I shouldn't listen to people who tell me these things. SCIENTISTS believed up until the 80's that babies didn't need anesthesia during surgery. clearly people know better know. why is this any different?﻿
-
-mariana Narvaez
-I had that rare condition it was not pleasant
-
-autumn laymy
-when she said not master baiting regularly is it healthy to masterbait
-
-Old Whateley
-ALL'A YEW DAMN PRO-LIFERS ARE TH' REASON THIS WORLD IS DESCENDING INTO AN ABYSSAL HELL! MY DAUGHTER SHOULDA KNOWN BETTER THAN T' GET PREGNANT IN THE FIRST PLACE, NOW THAT HORRIBLE LITTLE BASTARD CHILD IS RUNNIN' WILD ON TH' WHOLE TOWN! 
-
-(That's right! The Wizard Whateley is a weak-chinned, aged man, obsessed with rotting ancient books about the Great Old Ones. His albino daughter Lavinia summoned Yog-Sothoth and was impregnated by Him, giving birth to twins – one human, one decidedly not.)
-
-
-
-
-Jimmy Quick
-TWO WORDS - woman lie. Learn them and be the master of your own existence. Fail this lesson and become a slave to stupidity for your entire life. Signed, Someone who knows
-
-Jessica Hoover
-I think I'm in love with you. You do what I want to do for a living. you're literally my idol.
-
-Anthony Reich
-In a video tell me how the helicopter you have over a million subscribers talking about the vagina
-
-William Dyer
-This video takes place at the mountains of madness – you can tell by the pixels, I have seen such things before
-
-(That's right! William Dyer is the narrator of At The Mountains of Madness, a Lovecraftian novel.)
-
-
+*/
